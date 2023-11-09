@@ -1,0 +1,32 @@
+#    Common ignore
+*.o
+*.bin
+*.bak
+*.rar
+*.zip
+*.7z
+*.tar
+*.tar.gz
+.svn
+
+#  MDK ignore
+*/output/
+*/Objects/
+*ZM400LIB/
+*.axf
+
+
+#    ADS ignore
+*.axf
+*.stg
+*.tdt
+
+#    Xilinx SDK
+.metadata/
+Workspace/
+WORKSPACE/
+RemoteSystemsTempFiles/
+SDK.log
+SI/
+
+
