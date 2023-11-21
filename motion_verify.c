@@ -28,6 +28,7 @@ unsigned int  VariableRotary(unsigned int actulpos)
     {
     	lastpos = actulpos;
     }
+    add = add % CYCLERATE;
     repos = ((actulpos % CYCLERATE) + add) % CYCLERATE;
 
     return repos;
