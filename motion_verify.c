@@ -1,12 +1,15 @@
-#define MAXNUM UINT32_MAX
+//整型数据可变环-分辨率-2023年11月9日
+//目前适用于圈数为正数
+
+#define MAXNUM 0xffffffff
 #define CYCLERATE 400
-#define CWLVALUE    (UINT32_MAX - CYCLERATE + 1)
+#define CWLVALUE    (MAXNUM - CYCLERATE + 1)
 #define CWBVALUE    (CYCLERATE - 1)
 
 unsigned int  VariableRotary(unsigned int actulpos)
 {
-    static int unsigned lastpos = 0;
-    static int unsigned add = 0;
+    static unsigned int  lastpos = 0;
+    static unsigned int  add = 0;
     unsigned int modvalue =  MAXNUM % CYCLERATE + 1;
     unsigned int repos = 0;
 
